@@ -25,8 +25,8 @@
                                 <rect key="frame" x="90" y="290" width="194" height="86"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TIRA HACIA ABAJO PARA DESBLOQUEAR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q0K-2A-LbQ">
-                                <rect key="frame" x="76" y="623" width="223" height="14"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="11"/>
+                                <rect key="frame" x="75" y="623" width="226" height="14"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="11"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -39,14 +39,18 @@
                             <constraint firstItem="hAL-Yb-7Hw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fPW-wL-neF"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imgLogoBatman" destination="hAL-Yb-7Hw" id="QRE-4E-fwu"/>
+                        <outlet property="lblInstructions" destination="q0K-2A-LbQ" id="WQ2-cU-D5a"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="qAH-nt-70b">
             <objects>
-                <viewController id="zo1-Dl-Gq1" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="zo1-Dl-Gq1" customClass="LoginViewController" customModule="BatLogin" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xYz-lK-vXh"/>
                         <viewControllerLayoutGuide type="bottom" id="sHL-qU-MVU"/>
@@ -79,13 +83,13 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CONTRASEÑA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="npM-sN-uxU">
-                                <rect key="frame" x="62" y="310" width="79" height="13.5"/>
+                                <rect key="frame" x="62" y="310" width="79" height="14"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="11"/>
                                 <color key="textColor" red="0.94509803920000002" green="0.76862745099999996" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Uqg-OK-zVX">
-                                <rect key="frame" x="62" y="328.5" width="250" height="44"/>
+                                <rect key="frame" x="62" y="329" width="250" height="44"/>
                                 <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="Xlh-cp-QZe"/>
@@ -96,7 +100,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Sf-so-qrX">
-                                <rect key="frame" x="124" y="392.5" width="126" height="44"/>
+                                <rect key="frame" x="124" y="393" width="126" height="44"/>
                                 <color key="backgroundColor" red="0.94509803920000002" green="0.76862745099999996" blue="0.058823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="2TK-ds-XlJ"/>
@@ -126,6 +130,15 @@
                             <constraint firstItem="Xuh-wo-1Pl" firstAttribute="top" secondItem="xYz-lK-vXh" secondAttribute="bottom" constant="50" id="qhI-8M-Kta"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnEntrar" destination="5Sf-so-qrX" id="hRe-OZ-DSG"/>
+                        <outlet property="imgBatLogin" destination="REZ-gE-boi" id="SKh-nH-Gvk"/>
+                        <outlet property="imgLogoBatman" destination="Xuh-wo-1Pl" id="iap-lN-FfM"/>
+                        <outlet property="lblPass" destination="npM-sN-uxU" id="OeJ-H4-wWB"/>
+                        <outlet property="lblUsuario" destination="CT1-8e-F5T" id="nyy-tz-oTB"/>
+                        <outlet property="txtPass" destination="Uqg-OK-zVX" id="CkR-Pk-3iw"/>
+                        <outlet property="txtUsuario" destination="QbJ-OS-VEx" id="Qns-BQ-YUd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5e8-pM-zIm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

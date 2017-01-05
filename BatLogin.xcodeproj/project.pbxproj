@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9CC5C7E11E1E684100E2EF07 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC5C7E01E1E684100E2EF07 /* LoginViewController.swift */; };
 		9CD200DE1E1D6E850091CAE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD200DD1E1D6E850091CAE7 /* AppDelegate.swift */; };
 		9CD200E01E1D6E850091CAE7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD200DF1E1D6E850091CAE7 /* ViewController.swift */; };
 		9CD200E31E1D6E860091CAE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CD200E11E1D6E860091CAE7 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9CC5C7E01E1E684100E2EF07 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = ../LoginViewController.swift; sourceTree = "<group>"; };
 		9CD200DA1E1D6E850091CAE7 /* BatLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BatLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CD200DD1E1D6E850091CAE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CD200DF1E1D6E850091CAE7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				9CD200E41E1D6E860091CAE7 /* Assets.xcassets */,
 				9CD200E61E1D6E860091CAE7 /* LaunchScreen.storyboard */,
 				9CD200E91E1D6E860091CAE7 /* Info.plist */,
+				9CC5C7E01E1E684100E2EF07 /* LoginViewController.swift */,
 			);
 			path = BatLogin;
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CC5C7E11E1E684100E2EF07 /* LoginViewController.swift in Sources */,
 				9CD200E01E1D6E850091CAE7 /* ViewController.swift in Sources */,
 				9CD200DE1E1D6E850091CAE7 /* AppDelegate.swift in Sources */,
 			);
@@ -300,6 +304,7 @@
 				9CD200EE1E1D6E860091CAE7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
